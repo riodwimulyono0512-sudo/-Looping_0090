@@ -16,3 +16,24 @@ void input() {
     cout << "Masukkan kode jurusan (1-3): ";
     cin >> kodeJurusan;
 }
+
+// prosedur untuk pengecekan kondisi
+void pilihanJurusan() {
+    switch (kodeJurusan) {
+        case 1:
+            namaJurusan = "Teknologi Informasi";
+            statusKuota = "tersedia (15 Kursi)";
+            break;
+        case 2:
+            namaJurusan = "Teknologi Elektro";
+            statusKuota = "Kuota Penuh";
+            break;
+        case 3:
+            namaJurusan = "Sistem Informasi";
+            statusKuota = "tersedia (5 Kursi)";
+            break;
+        default:
+            namaJurusan = "Tidak Diketahui";
+            statusKuota = "Eror: Kode Tidak Valid";
+    }
+}
